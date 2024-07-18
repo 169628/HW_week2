@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+:root {
+  --primary: #00ffa3;
+}
+
+/* CSS reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bruno Ace SC", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+/* Utilities */
+.d-f {
+  display: flex;
+}
+.f-d-c {
+  flex-direction: column;
+}
+.j-c-b {
+  justify-content: space-between;
+}
+.a-i-c {
+  align-items: center;
+}
+.a-i-s {
+  align-items: start;
+}
+.bg-dark {
+  background-color: black;
+}
+
+/* Spacing */
+.pt-10 {
+  padding-top: 40px;
+}
+.pt-18 {
+  padding-top: 72px;
+}
+.pt-24 {
+  padding-top: 96px;
+}
+.pt-40 {
+  padding-top: 160px;
+}
+
+.pb-8 {
+  padding-bottom: 32px;
+}
+.pb-10 {
+  padding-bottom: 40px;
+}
+.pb-24 {
+  padding-bottom: 96px;
+}
+.pb-40 {
+  padding-bottom: 160px;
+}
+.ms-4 {
+  margin-left: 16px;
+}
+.ms-5 {
+  margin-left: 20px;
+}
+.ms-6 {
+  margin-left: 24px;
+}
+.mt-auto {
+  margin-top: auto;
+}
+.mt-1 {
+  margin-top: 4px;
+}
+.mt-4 {
+  margin-top: 16px;
+}
+.mt-7 {
+  margin-top: 28px;
+}
+.mt-8 {
+  margin-top: 32px;
+}
+.mt-9 {
+  margin-top: 36px;
+}
+
+/* component */
+.btn {
+  border-radius: 32px;
+  display: inline;
+  padding: 12px 24px;
+  font-size: 16px;
+}
+.btn-light {
+  background: white;
+  color: black;
+}
+.btn-dark {
+  background: black;
+  color: white;
+}
+
+/* header */
+.navbar-text {
+  font-size: 16px;
+  color: #d1d1d1;
+}
+.navbar-text:hover {
+  color: var(--primary);
+}
+
+/* banner */
+.banner-text {
+  font-size: 64px;
+  color: white;
+}
+.banner-name {
+  font-size: 128px;
+  color: var(--primary);
+  text-align: end;
+}
+.banner-btn-end {
+  text-align: end;
+}
+
+/* intro */
+.intro {
+  background-image: url(./public/background-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro-left {
+  max-width: 41.66%;
+}
+.intro-title {
+  font-size: 64px;
+  color: white;
+}
+.intro-text {
+  color: white;
+}
+
+/* about me */
+.about-card {
+  max-width: 50%;
+  flex-wrap: wrap;
+  margin: -12px;
+}
+.column {
+  max-width: 50%;
+  padding: 12px;
+}
+.card {
+  padding: 16px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 4px 4px 4px 0px #00000014;
+}
+.card h3 {
+  font-size: 20px;
+  color: #15161d;
+}
+.card p {
+  font-size: 16px;
+  color: #15161d;
+}
+.about-me {
+  max-width: 41.66%;
+}
+.about-me h2 {
+  font-size: 64px;
+}
+
+/* contact me */
+.contact {
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+.contact p {
+  font-size: 64px;
+  color: white;
+}
+.contact a:hover {
+  border-radius: 40px;
+  box-shadow: 0px 0px 16px 3px #9094ffe5;
+}
+
+/* projects */
+.projects h2 {
+  max-width: 746px;
+  font-size: 64px;
+  margin-left: auto;
+}
+.my-projects {
+  max-width: 66.66%;
+}
+.my-projects p {
+  font-size: 16px;
+  color: #15161d;
+}
+
+/* footer */
+
+.footer {
+  text-align: center;
+}
+.footer p {
+  font-size: 16px;
+  color: white;
+}
